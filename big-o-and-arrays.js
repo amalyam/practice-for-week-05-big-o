@@ -9,12 +9,12 @@ arr.push()
 //Space: O(1)
 arr.pop()
 
-//Time: O(n) ??
-//Space: 
+//Time: O(n) -> all values need to be updated, which is O(1) per update -> O(n)
+//Space: O(1)
 arr.shift()
 
-//Time: O(n) ??
-//Space: 
+//Time: O(n) -> same as above
+//Space: O(1)
 arr.unshift()
 
 //Time: O(n)
@@ -46,8 +46,8 @@ arr.reduce()
 //Space: O(1)
 arr.reverse()
 
-//Time: O(n^2)
-//Space: O(n^2)
+//Time: O(n)
+//Space: O(n)
 [...arr]
 
 
@@ -86,7 +86,7 @@ function countAnimals2(animals) {
 }
 
 // Print the first 10 animals in the list
-// Time complexity: O(n)
+// Time complexity: O(1)
 // Space complexity: O(1)
 function printTenAnimals(animals) {
   if (animals.length < 10) {
